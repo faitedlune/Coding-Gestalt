@@ -56,7 +56,8 @@ PImage flop(PImage img) {
       
       // just copy the pixel from the source to the target
       // this is where you do all the crazy per pixel operations
-      img3.pixels[y * w + x] = img.pixels[(h-y-1) * w + x]; // x*h+h-x; x*h+h-y-1;y * h + h - y-1
+      int yfrontthetop=(h-y-1);
+      img3.pixels[y * w + x] = img.pixels[/*(w*h)-(y * w + x+1)*/yfrontthetop * w + x]; // x*h+h-x; x*h+h-y-1;y * h + h - y-1
       
     }
   }
@@ -69,6 +70,9 @@ PImage flop(PImage img) {
   return img3;
 }
 
+int calIndex(int x, int y, int w){
+ return y*w+x; 
+}
 
 
 
