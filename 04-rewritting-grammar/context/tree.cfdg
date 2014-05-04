@@ -1,0 +1,21 @@
+startshape PRIN
+
+shape PRIN
+rule  0.03{
+A[s.7]
+PRIN[x.5 r 10 s .8]
+}
+rule{
+A[]
+PRIN[x-.6 y .2 ]
+PRIN[x-1 y .6 r -60 ]
+PRIN[x 6  s.7]
+}
+
+shape A{
+CIRCLE[]
+CIRCLE[y.75]
+CIRCLE[y 1.5]
+CIRCLE[x .5 y 2  s.95]
+CIRCLE[x -.6 y 1.85  s.9]
+}

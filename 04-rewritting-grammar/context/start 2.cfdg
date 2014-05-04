@@ -1,0 +1,18 @@
+startshape ARBOL
+
+shape ARBOL
+rule{A[]}
+
+
+
+shape A{
+CIRCLE[]
+A[x -.7 y .5 s.65]
+B[x .7 y .5 s.65  ]
+}
+
+
+shape B{
+A[y .5 r 5]
+}
+

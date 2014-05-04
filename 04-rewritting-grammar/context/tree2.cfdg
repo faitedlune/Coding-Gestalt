@@ -1,0 +1,30 @@
+startshape TREE
+
+shape TREE
+rule{
+LINES [ b .4]
+}
+rule{
+LINES [ b .8]
+}
+
+shape LINES {
+	LINE [ ]
+
+}
+
+shape LINE
+rule 100{
+CIRCLE [ ]
+LINE [ y 0.1 ]
+}
+
+rule 1 {LINE [ r 45]}
+rule 1 {LINE [ r -45]}
+rule 4 {
+	SQUARE [
+		size 3
+		rotate 45
+	]
+	LINE [ ]
+}

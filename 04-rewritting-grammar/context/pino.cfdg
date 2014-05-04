@@ -1,0 +1,27 @@
+startshape BOX
+
+shape BOX
+rule 10 {
+A [ ]
+C [ y 1]
+BOX [ y 1 s .99 r 45 ]
+}
+rule 10 {
+A [ ]
+C [ y 1]
+BOX [ y 1 s .99 r -45 ]
+}
+
+path A {
+    MOVETO( 0.5,  0.5)
+    LINETO(0.5, -0.5)
+    STROKE()[]      // draw a line on the path using the default line width (10%)
+}
+
+
+path C {
+MOVETO( 1,  0.5)
+    LINETO( 0.5, -0.5)
+    LINETO(-0.5, 0.5)
+    STROKE()[] 
+}

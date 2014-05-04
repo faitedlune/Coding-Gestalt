@@ -1,0 +1,22 @@
+startshape ARBOL
+
+shape ARBOL
+rule{
+AB[]
+}
+
+shape AB
+rule{
+A[]
+}
+
+shape A{
+CIRCLE[ h 80 sat 1 b .4 ]
+A[x -.5 y 1 s.9 r -10 ]
+B[x .5 y 1 s.5 r 10 b .5]
+}
+
+shape B{
+A[]
+
+}
